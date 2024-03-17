@@ -1,0 +1,148 @@
+body {
+    background-color: #272727;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Sora", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1400px) {
+    .main_holder {
+        width: 90%;
+    }
+}
+
+.main_holder {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.upload_area {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data_type {
+    border-bottom: #507f4b 1px solid;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 24px;
+}
+
+.data_type div {
+    width: 45%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.data_type :hover{
+    color: #e7e7e7;
+}
+
+.data_type .active_border{
+    height: 3px;
+    width: 100%;
+}
+
+.active_border_color{
+    background-color: #5c695b;
+}
+
+
+
+
+.help {
+    position: absolute;
+    right: 0;
+}
+
+.url_upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.url_upload > *:not(p) {
+    margin-top: 40px;
+}
+
+.file_upload > *:not(p) {
+    margin-top: 40px;
+}
+
+.url_upload input {
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    border-style: none;
+    background-color: #e7e7e7;
+}
+
+.url_upload button{
+    height: 40px;
+    width: 180px;
+}
+
+.type_img {
+    height: 100px;
+    width: 100px;
+}
+
+.file_upload input[type="file"] {
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    border-style: none;
+    background-color: #dedede;
+}
+
+.file_upload input[type="submit"]{
+    background-color: #272727;
+    border: 1px solid #3A7734;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.file_upload input[type="submit"]:hover{
+    background-color: #1f1f1f;
+    color: #e7e7e7;
+}
+
+.file_upload button {
+    height: 40px;
+    width: 180px;
+}
+
+.type_img {
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clustering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="main_holder">
+    <div class="about">
+        <h1 style="font-size: 60px">Your Clustering</h1>
+        <p>This webpage can help you in analyzing of your datasets</p>
+    </div>
+    <div class="upload_area">
+        <div class="data_type">
+            <div class="file">
+                <a href="{{ url_for('file_page') }}">FILE</a>
+                <div class="active_border"></div>
+            </div>
+            <div class="URL">
+                <a href="{{ url_for('url_page') }}">URL</a>
+                <div class="active_border"></div>
+            </div>
+            <img src="{{ url_for('static', filename='img/help.svg') }}" alt="" class="help">
+        </div>
+
+        <div class="input_area">
+            {% block input %}{% endblock %}
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

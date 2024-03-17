@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block input %}
+<div class="file_upload" style="display:block; text-align: center;">
+    <div>
+        <img src="{{ url_for('static', filename='img/document.svg') }}" alt="" class="type_img document_img">
+    </div>
+    <div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <input type="submit" value="Choose File">
+        </form>
+        <p style="margin-top: 40px">Upload your dataset file here</p>
+
+        <button type="button">Start Clustering</button>
+    </div>
+</div>
+{% endblock %}

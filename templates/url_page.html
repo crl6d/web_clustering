@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block input %}
+<div class="url_upload" style="display:block; text-align: center;">
+
+    <div>
+        <img src="{{ url_for('static', filename='img/web.svg') }}" alt="" class="type_img">
+    </div>
+
+    <div>
+        <label>
+            <input type="text" name="url" placeholder="Enter URL">
+        </label>
+        <p>give here your link for dataset</p>
+    </div>
+
+    <div>
+        <button type="button">Start Clustering</button>
+    </div>
+</div>
+{% endblock %}
